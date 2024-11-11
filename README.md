@@ -1,12 +1,12 @@
-Wordpress local development boilerplate template
+# Wordpress local development boilerplate template
 
 Made with this guide: https://medium.com/@richardevcom/wordpress-development-environment-with-docker-ba52427bdd65
 
 ## Managing the Docker containers:
-### How to build and run backend:
+### How to build and run:
 1. `docker compose up -d`
 
-### How to restart entire backend:
+### How to restart all containers:
 1. `docker compose restart`
 
 OR
@@ -19,3 +19,6 @@ OR
 
 ### How to stop all running containers
 `docker container stop $(docker ps -aq)`
+
+## Accessing Local Web App
+After running `docker compose up -d` you can go to http://localhost:8080 to see the WordPress site.
